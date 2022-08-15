@@ -1,4 +1,4 @@
-# Sauce Help
+# Sauce Helper (SHelper)
 
 [![crates.io](https://img.shields.io/crates/v/shelper.svg)](https://crates.io/crates/shelper)
 [![Documentation](https://docs.rs/shelper/badge.svg)](https://docs.rs/shelper)
