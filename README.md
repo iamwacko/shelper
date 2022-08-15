@@ -39,6 +39,24 @@ To install and compile from source (or to develop):
 
 `shelper -j https://app.saucelabs.com/tests/<session-id>`
 
+If you want info about a tunnel you would run
+`shelper -t <tunnel-id> -o <owner-of-the-tunnel>`
+
+If you owned the tunnel and have your Sauce credentials saved as environment variables you could omit the -o and -k
+flags.
+
+```
+    -k, --key <key>                       Sauce Access Key
+    -j, --jobinfo <one or more job>...    Get job details.  Takes a URL link to a session or a Job ID string
+    -o, --owner <sauce_username>          Sauce account that owns a sauce resource (tunnel, job, asset)
+    -r, --region <region>                 Region/datacenter to search. [possible values: EU, US]
+    -t, --tunnelinfo <tunnel_id>...       Get information about a tunnel. REQUIRES:
+                                          - the sauce username that created the tunnel, either in the Owner
+                                          flag(-o/--owner) OR as an env. variable
+                                          - the access key used to authenticate (env variable or as a flag)
+                                          - the tunnel id, provided at tunnel runtime
+```
+
 ## Development
 `cargo doc --open`: compile and run the documentation
 
